@@ -1,0 +1,1 @@
+# templateAndroidNdk-root
