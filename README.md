@@ -1,1 +1,4 @@
-# templateAndroidNdk-root
+## template-root
+
+as demo template
+
