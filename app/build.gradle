@@ -2,13 +2,13 @@ apply plugin: 'com.android.model.application'
 
 model {
     android {
-        compileSdkVersion = 23
-        buildToolsVersion = '23.0.2'
+        compileSdkVersion rootProject.ext.compileSdkVersion
+        buildToolsVersion rootProject.ext.buildToolsVersion
 
         defaultConfig {
             applicationId = 'com.example.hellojni'
-            minSdkVersion.apiLevel = 4
-            targetSdkVersion.apiLevel = 23
+            minSdkVersion.apiLevel = rootProject.ext.minSdkVersion
+            targetSdkVersion.apiLevel = rootProject.ext.targetSdkVersion
         }
         /*
          * native build settings: taking default for almost everything
